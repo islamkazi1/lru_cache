@@ -6,7 +6,8 @@ Created on Aug 28, 2020
 
 class DoublyLlist(object):
     '''
-    classdocs
+    A doubly linked list, that maintains a pointer to the head and tail and maintains a list of 
+	nodes with links to the previous and next nodes.
     '''
     def __init__(self):
         '''
