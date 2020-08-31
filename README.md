@@ -26,6 +26,6 @@ evicted from the cache. If the put operation is used for an existing key, it wil
 - There is no memory limitations, which may allow the cache to accept really large objects and may casue out of memory error
 - No testing has been done around the memory usage
 
-<b>Future Modification Scopes<b>
+<b>Future Modification Scopes</b>
 - Decorate the lru_cache.py to have thread safe methods
 - Better memory mamangement logic
