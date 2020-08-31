@@ -2,8 +2,7 @@
 
 A least recently used (LRU) cache with O(1) get,put and delete operations, implemented in Python 3.8.5. It will place the
 items on top whenever a get or put is used. If the cache is full, during the put operation the least recently used item will be
-evicted from the cache. If the put operation is used for an existing key, it will get updated with the new value.
-
+evicted from the cache. If the put operation is used for an existing key, it will get updated with the new value. 
 
 <b>Installation and Prerequisites</b>
 - Python 3.8.5 installed and added in PATH
@@ -21,3 +20,12 @@ evicted from the cache. If the put operation is used for an existing key, it wil
 	 </br>py test.py
 - It has 9 basic test cases to cover most of the use cases
 - You can modify the test.py to include your own tests or change the cache sizes as well
+
+<b>Limitations</b>
+- This is not thread safe
+- There is no memory limitations, which may allow the cache to accept really large objects and may casue out of memory error
+- No testing has been done around the memory usage
+
+<b>Future Modification Scopes<b>
+- Decorate the lru_cache.py to have thread safe methods
+- Better memory mamangement logic
